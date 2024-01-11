@@ -3,7 +3,7 @@ import React from "react";
 import butterfly from './../images/Screenshot_4.png';
 function About() {
     return (
-        <div class=" flex w-[90rem] gap-4 mx-auto mt-10 ">
+        <div class=" flex w-[80rem] gap-4 mx-auto mt-10 ">
             
                 <div class="relative mt-20 w-[60rem] mx-auto">
                     <svg width="100%"  className="svgText">
