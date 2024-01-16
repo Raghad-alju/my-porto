@@ -38,3 +38,29 @@
    
  }
  
+
+ .center:hover {
+  color: purple;
+}
+.center::before, .center::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+}
+.center::before {
+  border-top: 2px solid purple;
+  border-bottom: 2px solid purple;
+  transform: scale3d(0, 1, 1);
+}
+.center::after {
+  border-left: 2px solid purple;
+  border-right: 2px solid purple;
+  transform: scale3d(1, 0, 1);
+}
+.center:hover::before, .center:hover::after {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.5s;
+}
+

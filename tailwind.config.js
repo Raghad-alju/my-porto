@@ -15,6 +15,8 @@ module.exports = {
           200:"#d9d9d9",
           300: "#9d9495"
       },
+      Linen: '#faf0e6',
+      Late: '#fff8e7',
       Rose:"#fcdcc4"
       }
     },

@@ -1,41 +1,46 @@
-// Copyright 2024 ragad
-// 
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-// 
-//     http://www.apache.org/licenses/LICENSE-2.0
-// 
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
 
+// text-blue-600 border-b-2 border-blue-600
 
 function Projects() {
     return (
-      <div className=" w-[80rem] h-96 bg-impBage-100 mx-auto rounded-lg">
-        <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 ml-20 ">
-    <ul class="flex flex-wrap -mb-px">
-        <li class="me-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Profile</a>
-        </li>
-        <li class="me-2">
-            <a href="#" class="inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active " aria-current="page">Dashboard</a>
-        </li>
-        <li class="me-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Settings</a>
-        </li>
-        <li class="me-2">
-            <a href="#" class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Contacts</a>
-        </li>
-        <li>
-            <a class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed ">Disabled</a>
-        </li>
-    </ul>
-</div>
-      </div>
+        <div className=" w-[80rem] h-auto  bg-Linen mx-auto rounded-lg font-lora">
+            <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 pl-16 ">
+                <ul class="flex flex-wrap -mb-px">
+                    <li class="me-2">
+                        <button  class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Front End Projects</button>
+                    </li>
+                    <li class="me-2">
+                        <button  class="inline-block p-4  rounded-t-lg  border-b-2 hover:text-gray-600 hover:border-gray-300  " aria-current="page">Backend Projects</button>
+                    </li>
+                    <li class="me-2">
+                        <button  class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Group Projects</button>
+                    </li>
+                 
+                </ul>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 m-12">
+
+
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Noteworthy technology acquisitions 2021</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+                            Read more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     );
-  }
-  export default Projects;
+}
+export default Projects;

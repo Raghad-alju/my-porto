@@ -3,7 +3,7 @@ import React from "react";
 import butterfly from './../images/Screenshot_4.png';
 function About() {
     return (
-        <div class=" flex w-[80rem] gap-4 mx-auto mt-10 ">
+        <div class=" flex w-[70rem] gap-4 mx-auto mt-14 ">
             
                 <div class="relative mt-20 w-[60rem] mx-auto">
                     <svg width="100%"  className="svgText">
@@ -19,7 +19,7 @@ function About() {
                             Greetings
                         </text>
                     </svg>
-                    <div className=" font-lora text-2xl text-justify"> I'm <span className=" text-red-700">Ragahd Aljuhayimi</span> a Fresh Graduate holding a Computer Science bachelor degree. Passionate about web development</div>
+                    <div className=" font-lora text-2xl text-justify"> I'm <span className=" text-red-700">Raghad Aljuhayimi</span> a Fresh Graduate holding a Computer Science bachelor degree. Passionate about web development</div>
                 </div>
             
             <div>
