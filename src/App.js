@@ -11,7 +11,9 @@ function App() {
     <>
       <div className=" fixed z-[-1] bg-impBage-10 w-screen h-screen "></div>
       <Navbar />
+      <div className=" pt-24">
       <About />
+      </div>
       <div className=" relative mt-32">
         <Projects />
       </div>

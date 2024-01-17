@@ -1,9 +1,9 @@
 
 import React from "react";
-import butterfly from './../images/Screenshot_4.png';
+import flower from './../images/Screenshot_5-removebg-preview.png';
 function About() {
     return (
-        <div class=" flex w-[70rem] gap-4 mx-auto mt-14 ">
+        <div class=" flex w-[70rem] gap-4 mx-auto  ">
             
                 <div class="relative mt-20 w-[60rem] mx-auto">
                     <svg width="100%"  className="svgText">
@@ -23,7 +23,7 @@ function About() {
                 </div>
             
             <div>
-                <img class="h-auto max-w-full rounded-lg" src={butterfly} alt="" />
+                <img class="h-auto max-w-full rounded-lg" src={flower} alt="" />
             </div>
 
 

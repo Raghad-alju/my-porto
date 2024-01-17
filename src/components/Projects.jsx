@@ -3,14 +3,14 @@
 
 function Projects() {
     return (
-        <div className=" w-[80rem] h-auto  bg-Linen mx-auto rounded-lg font-lora">
+        <div className=" w-[80rem] h-auto pb-10  bg-Linen mx-auto  font-lora shadow-xl ">
             <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 pl-16 ">
                 <ul class="flex flex-wrap -mb-px">
                     <li class="me-2">
                         <button  class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Front End Projects</button>
                     </li>
                     <li class="me-2">
-                        <button  class="inline-block p-4  rounded-t-lg  border-b-2 hover:text-gray-600 hover:border-gray-300  " aria-current="page">Backend Projects</button>
+                        <button  class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Backend Projects</button>
                     </li>
                     <li class="me-2">
                         <button  class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 ">Group Projects</button>
@@ -18,12 +18,12 @@ function Projects() {
                  
                 </ul>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 m-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-12">
 
 
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                <div class="max-w-sm bg-white border border-gray-200 shadow ">
                     <a href="#">
-                        <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+                        <img className="h" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
                     </a>
                     <div class="p-5">
                         <a href="#">
