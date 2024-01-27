@@ -3,9 +3,9 @@ import React from "react";
 import flower from './../images/Screenshot_5-removebg-preview.png';
 function About() {
     return (
-        <div class=" flex w-[70rem] gap-4 mx-auto  ">
+        <div class=" flex lg:w-[70rem] gap-4 mx-auto w-[50rem]">
             
-                <div class="relative mt-20 w-[60rem] mx-auto">
+                <div class="relative mt-20 sm:w-[60rem] w-[30rem] mx-auto">
                     <svg width="100%"  className="svgText">
                         <defs>
                            
@@ -19,7 +19,7 @@ function About() {
                             Greetings
                         </text>
                     </svg>
-                    <div className=" font-lora text-2xl text-justify"> I'm <span className=" text-red-700">Raghad Aljuhayimi</span> a Fresh Graduate holding a Computer Science bachelor degree. Passionate about web development</div>
+                    <div className=" font-lora text-2xl text-justify"> I'm <span className=" text-red-700">Raghad Aljuhaymi</span> a Fresh Graduate holding a Computer Science bachelor degree. Passionate about web development</div>
                 </div>
             
             <div>
