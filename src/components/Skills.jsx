@@ -13,7 +13,7 @@ function Skills() {
 
                     </svg>
                     <div className=" w-1/2 bg-slate-500 h-44 m-24 ml-0">
-                        //icons           
+                        //icons   java python javaScript html css react tailwindcss msql .net       
 
                     </div>
                 </div>

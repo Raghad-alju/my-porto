@@ -12,14 +12,25 @@ function App() {
       <div className=" fixed z-[-1] bg-impBage-10 w-screen h-screen "></div>
       <Navbar />
       <div className=" pt-24">
+        <section id='About'>
       <About />
+      </section>
       </div>
+
+      
       <div className=" relative mt-32">
+        <section id='Projects'>
         <Projects />
+        </section>
       </div>
+
+      <section id='Skills'>
       <Skills />
+      </section>
       <div className=" mb-32">
+      <section id='Contact'>
       <Contact />
+      </section>
       </div>
       <Footer />
 
