@@ -36,7 +36,7 @@ function Navbar() {
     //hoverRef.current.className=temp;
   }
   return (
-    <nav class=" fixed w-full top-0  bg-impBage-10 border-gray-200 z-10 ">
+    <nav class=" fixed w-full top-0  bg-impBage-10 border-gray-200 z-10">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
 

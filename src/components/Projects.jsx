@@ -1,10 +1,15 @@
 
 // text-blue-600 border-b-2 border-blue-600
-import { useState } from "react";
+import { useState, useRef } from "react";
 import backends from "./Projects/backend";
-import frontends from "./Projects/frontEnd";
+import frontends from "./Projects/frontend";
 import group from "./Projects/group";
+import { useInView } from "react-intersection-observer"
+
 function Projects() {
+
+    const [ref, inView] = useInView({ threshold: 0.1 })
+
     const activeTab="inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500";
     const [ActiveProject, setActiveProject]=useState([{tabName:'frontend',isActive:false,projects:[...frontends]},{tabName:'backend',isActive:false,projects:[...backends]},{tabName:'group',isActive:false,projects:[...group]}]);
     const [currentProjects, setCurrentProjects]=useState([]);
@@ -28,8 +33,10 @@ function Projects() {
 
 
     return (
-        <div className=" lg:w-[80rem] h-auto pb-10  bg-Linen mx-auto  font-lora shadow-xl ">
-            <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 pl-16 ">
+        
+        <div ref={ref} className={inView ? "fade-in-left pt-24" : "pt-24"}>
+        <div   className=" lg:w-[80rem] h-auto pb-10 bg-Linen mx-auto font-lora shadow-xl ">
+            <div  class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 pl-16 ">
                 <ul class="flex flex-wrap -mb-px">
                     <li class="me-2">
                         <button onClick={()=>handleTabClick('frontend')} className={`${ActiveProject[0].isActive? activeTab:'inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300'} `}>Front End Projects</button>
@@ -86,6 +93,9 @@ function Projects() {
                 </div>
 
             </div>
+        </div>
+        <div className=" h-[1px] w-1/4 bg-slate-700 my-36 mx-auto"></div>
+
         </div>
     );
 }
