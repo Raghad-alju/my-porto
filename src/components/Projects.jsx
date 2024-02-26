@@ -55,10 +55,12 @@ function Projects() {
             <div class="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-3 gap-4 m-12">
 
             {currentProjects.map((proj,index)=>{
-                       return(<div class="max-w-sm bg-white border border-gray-200 shadow ">
+                       return(<div class=" relative max-w-sm bg-white border border-gray-200 shadow ">
                        <a href="#">
-                           <img key={index} src={proj.picture} alt="" />
+                           <img className="blur-md scale-95" key={index} src={proj.picture} alt="" />
+                           <img  className=" absolute -translate-y-48 scale-[90%] " key={index} src={proj.picture} alt="" />
                        </a>
+                      
                        <div class="p-5">
                            <a href="#">
                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{proj.projectName}</h5>
