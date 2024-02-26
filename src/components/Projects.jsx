@@ -11,8 +11,8 @@ function Projects() {
     const [ref, inView] = useInView({ threshold: 0.1 })
 
     const activeTab="inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500";
-    const [ActiveProject, setActiveProject]=useState([{tabName:'frontend',isActive:false,projects:[...frontends]},{tabName:'backend',isActive:false,projects:[...backends]},{tabName:'group',isActive:false,projects:[...group]}]);
-    const [currentProjects, setCurrentProjects]=useState([]);
+    const [ActiveProject, setActiveProject]=useState([{tabName:'frontend',isActive:true,projects:[...frontends]},{tabName:'backend',isActive:false,projects:[...backends]},{tabName:'group',isActive:false,projects:[...group]}]);
+    const [currentProjects, setCurrentProjects]=useState(frontends);
 
     function handleTabClick(tabName){
         console.log(frontends)
@@ -52,12 +52,12 @@ function Projects() {
             </div>
 
             
-            <div class="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 gap-4 m-12">
+            <div class="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-3 gap-4 m-12">
 
             {currentProjects.map((proj,index)=>{
                        return(<div class="max-w-sm bg-white border border-gray-200 shadow ">
                        <a href="#">
-                           <img className="h" src={proj.picture} alt="" />
+                           <img key={index} src={proj.picture} alt="" />
                        </a>
                        <div class="p-5">
                            <a href="#">
