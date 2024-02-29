@@ -16,7 +16,7 @@ import React, { useRef, useState } from "react";
 
 function Navbar() {
   const hoverRef = useRef();
-  const [isHovered, setIsHovered] = useState([false, false, false, false]);
+  const [isHovered, setIsHovered] = useState([]);
   const navbarContents = ["About", "Projects", "Skills", "Contact"];
 
   function handleHover(index) {
