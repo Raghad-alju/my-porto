@@ -46,7 +46,7 @@ function Skills() {
                     <div class="w-48 h-48 text-gray-600 left-12 top-20  absolute" >
                         <img src={skills} />
                     </div>
-                    <div className=" md:w-1/2 h-44 md:m-24 ml-0 flex justify-center flex-wrap ">
+                    <div className=" lg:w-1/2 h-44 lg:m-24 ml-0 flex justify-center flex-wrap ">
 
 
                     {languagesIcon.map((lang ,index)=>{
@@ -81,7 +81,7 @@ function Skills() {
                     </div>
                     
 
-                    <div className=" md:absolute top-[5rem] right-[20rem] md:w-1/2  h-44 ">
+                    <div className=" md:absolute top-[5rem] right-[20rem] lg:w-1/2  h-44 ">
                         <div className=" flex justify-center flex-wrap font-lora text-white max-md:translate-y-72 ">
                             
                             <span className="  bg-impBage-300 text-2xl m-3 p-2 rounded-lg transition-transform hover:scale-105 hover:bg-impBage-50">Creative</span>

@@ -58,7 +58,7 @@ function Projects() {
                        return(<div class=" relative max-w-sm bg-white border border-gray-200 shadow ">
                        <a href="#">
                            <img className="blur-md scale-90" key={index} src={proj.picture} alt="" />
-                           <img  className=" absolute md:-translate-y-48 -translate-y-36 scale-90 transition-transform hover:scale-100 " key={index} src={proj.picture} alt="" />
+                           <img  className=" absolute sm:-translate-y-48 -translate-y-32 scale-90 transition-transform hover:scale-100 " key={index} src={proj.picture} alt="" />
                        </a>
                       
                        <div class="p-5">
