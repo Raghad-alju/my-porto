@@ -10,7 +10,7 @@ function Projects() {
 
     const [ref, inView] = useInView({ threshold: 0.1 })
 
-    const activeTab="inline-block p-4 text-blue-600 border-b-2 border-blue-600 rounded-t-lg active dark:text-blue-500 dark:border-blue-500";
+    const activeTab="inline-block p-4 text-gray-700 border-b-2 border-gray-500 rounded-t-lg active ";
     const [ActiveProject, setActiveProject]=useState([{tabName:'frontend',isActive:true,projects:[...frontends]},{tabName:'backend',isActive:false,projects:[...backends]},{tabName:'group',isActive:false,projects:[...group]}]);
     const [currentProjects, setCurrentProjects]=useState(frontends);
 
@@ -52,13 +52,13 @@ function Projects() {
             </div>
 
             
-            <div class="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-3 gap-4 m-12">
+            <div class="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4 m-12">
 
             {currentProjects.map((proj,index)=>{
                        return(<div class=" relative max-w-sm bg-white border border-gray-200 shadow ">
                        <a href="#">
                            <img className="blur-md scale-90" key={index} src={proj.picture} alt="" />
-                           <img  className=" absolute -translate-y-48 scale-90 transition-transform hover:scale-100 " key={index} src={proj.picture} alt="" />
+                           <img  className=" absolute md:-translate-y-48 -translate-y-36 scale-90 transition-transform hover:scale-100 " key={index} src={proj.picture} alt="" />
                        </a>
                       
                        <div class="p-5">

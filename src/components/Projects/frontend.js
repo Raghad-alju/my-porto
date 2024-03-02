@@ -10,8 +10,8 @@ const frontends=[
         picture: images[0]
     },
     {
-        projectName:'E-Commerce Abaya',
-        desc:'A highly interactive E-store, with responsive layout. Built using React and tailwind CSS.',
+        projectName:'Project Planner',
+        desc:'A highly interactive to-do-list with unique features, with responsive layout. Built using React and tailwind CSS',
         link:'https://github.com/Raghad-alju/movieTickets',
         picture:images[1]
     },

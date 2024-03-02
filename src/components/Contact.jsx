@@ -6,9 +6,9 @@ function Contact() {
   const [ref, inView] = useInView({ threshold: 0.1 })
 
   return (
-    <div ref={ref} className={inView ? "fade-in-left pt-24" : null}>
-    <div className=" lg:w-[70rem] mx-auto">
-    <div className=" font-lora">Contact</div>
+    <div ref={ref} className={inView ? "fade-in-left pt-24" : "pt-24"}>
+    <div className=" lg:w-[80rem] mx-auto">
+    <div className=" font-lora ">Contact</div>
    <div className=" w-full h-36 bg-Linen">
 
    </div>

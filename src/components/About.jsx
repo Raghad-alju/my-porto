@@ -8,9 +8,9 @@ function About() {
 
     return (
         <div ref={ref} className={inView ? "fade-in-left pt-24" : "pt-24"}>
-        <div class=" flex lg:w-[70rem] gap-4 mx-auto w-[50rem] ">
+        <div class=" flex max-sm:flex-wrap lg:w-[70rem] gap-4 mx-auto md:w-[50rem] ">
             
-                <div class="relative mt-20 sm:w-[60rem] w-[30rem] mx-auto h-[35rem]">
+                <div class="relative mt-20 sm:w-[60rem] w-[25rem] m-8 md:h-[35rem]">
                     <svg width="100%"  className="svgText">
                         <defs>
                            
@@ -20,7 +20,7 @@ function About() {
 
                         </defs>
 
-                        <text className=" absolute translate-y-24" >
+                        <text className=" absolute translate-y-24 max-sm:text-5xl" >
                             Greetings
                         </text>
                     </svg>

@@ -39,18 +39,18 @@ function Skills() {
         <div ref={ref} className={inView ? "fade-in-left pt-24" : null}>
         <div className=" lg:w-[70rem]  mx-auto">
             
-            <div className=" w-full h-auto ">
-                <div className="relative flex">
-                    <img className=" w-[20rem] h-[20rem]  " src={color} />
+            <div className=" w-full h-auto  ">
+                <div className="relative md:flex max-md:h-[50rem] ">
+                    <img className=" w-[20rem] h-[20rem]   " src={color} />
                     
                     <div class="w-48 h-48 text-gray-600 left-12 top-20  absolute" >
                         <img src={skills} />
                     </div>
-                    <div className=" w-1/2 h-44 m-24 ml-0 flex justify-center flex-wrap">
+                    <div className=" md:w-1/2 h-44 md:m-24 ml-0 flex justify-center flex-wrap ">
 
 
                     {languagesIcon.map((lang ,index)=>{
-                        return <div key={index} onMouseOver={()=>handleHover(index)} onMouseLeave={()=>handleLeave(index)} className=" w-20 h-20 bg-impBage-300 rounded-full p-2 m-4 relative transition-transform hover:scale-95 hover:bg-impBage-50">
+                        return <div key={index} onMouseOver={()=>handleHover(index)} onMouseLeave={()=>handleLeave(index)} className=" w-20 h-20 bg-impBage-300 rounded-full p-2  m-4 relative transition-transform hover:scale-95 hover:bg-impBage-50">
                         <div className={`${isHovered[index]? 'absolute -translate-y-10 text-md w-16 font-lora text-center':'hidden'}`}>{lang.name}</div>
                         <img src={lang.icon}/>
                         
@@ -73,16 +73,16 @@ function Skills() {
                 </div>
 
            
-                <div className="relative w-full h-80 ">
-                    <img className=" w-[20rem] h-[20rem] absolute right-0 " src={color} />
+                <div className="relative w-full h-80 max-md:h-[40rem] ">
+                    <img className=" w-[20rem] h-[20rem] absolute right-0  " src={color} />
                     
                     <div class="w-48 h-48 text-gray-800 right-20 top-20 absolute" >
                         <img src={creative} />
                     </div>
                     
 
-                    <div className=" absolute top-[5rem] right-[20rem] w-1/2  h-44 ">
-                        <div className=" flex justify-center flex-wrap font-lora text-white ">
+                    <div className=" md:absolute top-[5rem] right-[20rem] md:w-1/2  h-44 ">
+                        <div className=" flex justify-center flex-wrap font-lora text-white max-md:translate-y-72 ">
                             
                             <span className="  bg-impBage-300 text-2xl m-3 p-2 rounded-lg transition-transform hover:scale-105 hover:bg-impBage-50">Creative</span>
                             <span className="  bg-impBage-300 text-2xl m-3 p-2 rounded-lg transition-transform hover:scale-105 hover:bg-impBage-50">UX/UI design</span>

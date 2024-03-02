@@ -48,7 +48,7 @@ function Navbar() {
             {navbarContents.map((cont, index) => {
 
               return (<li>
-                <a href={"#"+navbarContents[index]} onMouseOver={() => handleHover(index)} onMouseLeave={() => handleLeave(index)} class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">{cont}</a>
+                <a href={"#"+navbarContents[index]} onMouseOver={() => handleHover(index)} onMouseLeave={() => handleLeave(index)} class=" block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-500 md:p-0 ">{cont}</a>
                 <div className={` ${isHovered[index] ? "w-10 transition-all duration-100 ease-out" : ""} mx-auto  w-0 h-[1px] bg-slate-800`}></div>
               </li>)
 
